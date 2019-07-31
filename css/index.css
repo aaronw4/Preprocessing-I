@@ -138,6 +138,11 @@ body {
   margin: auto;
   background-color: #FFF5EE;
 }
+@media (max-width: 900px) {
+  html {
+    widows: 95%;
+  }
+}
 h1 {
   font-size: 6rem;
 }
@@ -148,16 +153,22 @@ h3 {
   font-size: 4rem;
 }
 h4 {
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 h5 {
+  font-size: 3rem;
+}
+h6 {
+  font-size: 2.5rem;
+}
+h7 {
   font-size: 2rem;
 }
 nav {
-  font-size: 2rem;
+  font-size: 2.25rem;
   display: flex;
   justify-content: flex-end;
-  padding-top: 1rem;
+  padding-top: 5rem;
 }
 nav .link {
   text-decoration: none;
@@ -211,27 +222,28 @@ header .header {
 }
 .intro {
   padding: 5rem;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
 }
 .intro b {
   font-weight: bold;
 }
 @media (max-width: 900px) {
   .intro {
-    font-size: 2.25rem;
+    font-size: 3.25rem;
   }
 }
 @media (max-width: 500px) {
   .intro {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 }
 .middle {
   display: flex;
   width: 100%;
-  font-size: 2.5rem;
   justify-content: space-around;
-  margin-bottom: 10rem;
+  margin-bottom: 2rem;
 }
 .skills {
   padding: 3rem;
@@ -241,6 +253,7 @@ header .header {
   flex-basis: 45%;
 }
 .skills p {
+  font-size: 3rem;
   text-align: center;
   font-weight: bold;
   text-decoration: underline;
@@ -263,7 +276,6 @@ header .header {
 @media (max-width: 600px) {
   .skills .list .skill {
     flex-basis: 60%;
-    padding-left: 25%;
     font-size: 1.8rem;
   }
 }
@@ -280,6 +292,36 @@ header .header {
   padding-left: 2rem;
 }
 .education p {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.education .list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  white-space: nowrap;
+}
+.education .list .skill {
+  flex-basis: 32%;
+}
+@media (max-width: 900px) {
+  .education .list .skill {
+    flex-basis: 40%;
+    font-size: 1.9rem;
+  }
+}
+@media (max-width: 600px) {
+  .education .list .skill {
+    flex-basis: 60%;
+    font-size: 1.8rem;
+  }
+}
+.education i {
+  color: #4682B4;
+}
+.education p {
   text-align: center;
   font-weight: bold;
   text-decoration: underline;
@@ -293,4 +335,14 @@ header .header {
   .education {
     font-size: 1.8rem;
   }
+}
+.work {
+  padding: 5rem;
+}
+.work h5 {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.work p {
+  font-size: 1.7rem;
 }

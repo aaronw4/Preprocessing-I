@@ -65,6 +65,11 @@ html, body {
 	background-color: @color1;
 }
 
+@media(max-width:900px) {
+	html {
+		widows: 95%;
+	}
+}
 
 h1 {
 	font-size: 6rem;
@@ -79,19 +84,27 @@ h3 {
 }
 
 h4 {
-	font-size: 3rem;
+	font-size: 3.5rem;
 }
 
 h5 {
+	font-size: 3rem;
+}
+
+h6 {
+	font-size: 2.5rem;
+}
+
+h7 {
 	font-size: 2rem;
 }
 
 
 nav {
-	font-size: 2rem;
+	font-size: 2.25rem;
 	display: flex;
 	justify-content: flex-end;
-	padding-top: 1rem;
+	padding-top: 5rem;
 
 	.link{
 		text-decoration: none;
@@ -156,25 +169,25 @@ header{
 
 .intro {
 	padding: 5rem;
-	font-size: 2.5rem;
+	font-size: 3.5rem;
+	margin-top: 4rem;
+	margin-bottom: 1rem;
 	b {
 		font-weight: bold;
 	}
 	@media (max-width: 900px) {
-		font-size: 2.25rem;	
+		font-size: 3.25rem;	
 	}
 	@media (max-width: 500px) {
-		font-size:2rem;
+		font-size:3rem;
 	}
 }
 
 .middle {
 	display: flex;
 	width: 100%;
-	font-size: 2.5rem;
 	justify-content: space-around;
-	margin-bottom: 10rem;
-
+	margin-bottom: 2rem;
 }
 
 .skills {
@@ -185,6 +198,7 @@ header{
 	flex-basis: 45%;
 	
 	p {
+		font-size: 3rem;
 		text-align: center;
 		font-weight: bold;
 		text-decoration: underline;
@@ -210,7 +224,6 @@ header{
 		@media (max-width: 600px) {
 			.skill {
 				flex-basis: 60%;
-				padding-left: 25%;
 				font-size: 1.8rem;
 			}
 		}
@@ -222,11 +235,7 @@ header{
 }
 
 .education{
-	padding: 3rem;
-	border: @border;
-	border-radius: 10%;
-	background-color: @color1 - 20;
-	flex-basis: 45%;
+	.skills();
 	font-size: 2rem;
 	padding-left: 2rem;
 
@@ -244,4 +253,17 @@ header{
 		font-size: 1.8rem;
 	}
 
+}
+
+.work{
+	padding: 5rem;
+
+	h5{
+		font-weight: bold;
+		text-decoration: underline;
+	}
+
+	p {
+		font-size: 1.7rem;
+	}
 }
