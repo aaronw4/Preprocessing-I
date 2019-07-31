@@ -63,10 +63,8 @@ html, body {
 	max-width: 900px;
 	margin: auto;
 	background-color: @color1;
-	@media (max-width: 900px) {
-		max-width: 90%;
-	}
 }
+
 
 h1 {
 	font-size: 6rem;
@@ -156,7 +154,7 @@ header{
 	}
 }
 
-.intro{
+.intro {
 	padding: 5rem;
 	font-size: 2.5rem;
 	b {
@@ -170,5 +168,70 @@ header{
 	}
 }
 
+.middle {
+	display: flex;
+	width: 100%;
+	font-size: 2.5rem;
+	justify-content: space-around;
+	margin-bottom: 10rem;
+}
 
+.skills {
+	padding: 3rem;
+	border: @border;
+	border-radius: 10%;
+	background-color: @color1 - 20;
+	flex-basis: 45%;
+	
+	p {
+		text-align: center;
+		font-weight: bold;
+		text-decoration: underline;
+	}
 
+	.list{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		white-space: nowrap;
+		
+		.skill {
+			flex-basis: 32%;
+		}
+
+		@media (max-width: 900px) {
+			.skill {
+				flex-basis: 40%;
+			}
+		}
+
+		@media (max-width: 600px) {
+			.skill {
+				flex-basis: 60%;
+				padding-left: 0%;
+			}
+		}
+	}
+	
+	i {
+		color: @color2;
+	}
+}
+
+.education{
+	padding: 3rem;
+	border: @border;
+	border-radius: 10%;
+	background-color: @color1 - 20;
+	flex-basis: 45%;
+	font-size: 2rem;
+	padding-left: 2rem;
+
+	p {
+		text-align: center;
+		font-weight: bold;
+		text-decoration: underline;
+		}
+
+	
+}

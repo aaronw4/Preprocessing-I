@@ -138,12 +138,6 @@ body {
   margin: auto;
   background-color: #FFF5EE;
 }
-@media (max-width: 900px) {
-  html,
-  body {
-    max-width: 90%;
-  }
-}
 h1 {
   font-size: 6rem;
 }
@@ -231,4 +225,60 @@ header .header {
   .intro {
     font-size: 2rem;
   }
+}
+.middle {
+  display: flex;
+  width: 100%;
+  font-size: 2.5rem;
+  justify-content: space-around;
+  margin-bottom: 10rem;
+}
+.skills {
+  padding: 3rem;
+  border: 1px solid black;
+  border-radius: 10%;
+  background-color: #ebe1da;
+  flex-basis: 45%;
+}
+.skills p {
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.skills .list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  white-space: nowrap;
+}
+.skills .list .skill {
+  flex-basis: 32%;
+}
+@media (max-width: 900px) {
+  .skills .list .skill {
+    flex-basis: 40%;
+  }
+}
+@media (max-width: 600px) {
+  .skills .list .skill {
+    flex-basis: 60%;
+    padding-left: 0%;
+  }
+}
+.skills i {
+  color: #4682B4;
+}
+.education {
+  padding: 3rem;
+  border: 1px solid black;
+  border-radius: 10%;
+  background-color: #ebe1da;
+  flex-basis: 45%;
+  font-size: 2rem;
+  padding-left: 2rem;
+}
+.education p {
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
 }
