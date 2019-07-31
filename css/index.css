@@ -174,7 +174,7 @@ nav .link {
 nav a:hover {
   font-weight: bold;
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   nav {
     justify-content: center;
     font-size: 1.5rem;
@@ -207,11 +207,28 @@ header .header {
     font-size: 3rem;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   header h1 {
     font-size: 4rem;
   }
   header h3 {
+    font-size: 2rem;
+  }
+}
+.intro {
+  padding: 5rem;
+  font-size: 2.5rem;
+}
+.intro b {
+  font-weight: bold;
+}
+@media (max-width: 900px) {
+  .intro {
+    font-size: 2.25rem;
+  }
+}
+@media (max-width: 500px) {
+  .intro {
     font-size: 2rem;
   }
 }
