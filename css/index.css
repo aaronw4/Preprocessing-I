@@ -176,13 +176,18 @@ nav .link {
   color: black;
   margin: 1rem;
 }
+@media (max-width: 500px) {
+  nav .link {
+    padding: 0.5rem;
+  }
+}
 nav a:hover {
   font-weight: bold;
 }
 @media (max-width: 500px) {
   nav {
     justify-content: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
 header {
@@ -343,6 +348,60 @@ header .header {
   font-weight: bold;
   text-decoration: underline;
 }
+.work h7 {
+  font-style: italic;
+}
 .work p {
   font-size: 1.7rem;
+  padding-top: 1rem;
+}
+.aboutIntro {
+  margin-top: 5rem;
+}
+.aboutContainer {
+  display: flex;
+  flex-direction: column;
+}
+.aboutContainer .story1 {
+  display: flex;
+  margin-top: 8rem;
+}
+.aboutContainer .story1 img {
+  height: auto;
+  width: 20%;
+}
+.aboutContainer .story1 p {
+  font-size: 2rem;
+  padding: 5rem;
+}
+.aboutContainer .story2 {
+  display: flex;
+  margin-top: 8rem;
+}
+.aboutContainer .story2 img {
+  height: auto;
+  width: 20%;
+}
+.aboutContainer .story2 p {
+  font-size: 2rem;
+  padding: 5rem;
+}
+.aboutContainer .story2 img {
+  width: 40%;
+}
+.aboutContainer .story3 {
+  display: flex;
+  margin-top: 8rem;
+  margin-bottom: 5rem;
+}
+.aboutContainer .story3 img {
+  height: auto;
+  width: 20%;
+}
+.aboutContainer .story3 p {
+  font-size: 2rem;
+  padding: 5rem;
+}
+.aboutContainer .story3 img {
+  width: 40%;
 }
