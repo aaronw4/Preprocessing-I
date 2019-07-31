@@ -257,12 +257,14 @@ header .header {
 @media (max-width: 900px) {
   .skills .list .skill {
     flex-basis: 40%;
+    font-size: 1.9rem;
   }
 }
 @media (max-width: 600px) {
   .skills .list .skill {
     flex-basis: 60%;
-    padding-left: 0%;
+    padding-left: 25%;
+    font-size: 1.8rem;
   }
 }
 .skills i {
@@ -281,4 +283,14 @@ header .header {
   text-align: center;
   font-weight: bold;
   text-decoration: underline;
+}
+@media (max-width: 900px) {
+  .education {
+    font-size: 1.9rem;
+  }
+}
+@media (max-width: 500px) {
+  .education {
+    font-size: 1.8rem;
+  }
 }
