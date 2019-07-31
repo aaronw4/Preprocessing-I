@@ -358,6 +358,11 @@ header .header {
 .aboutIntro {
   margin-top: 5rem;
 }
+@media (max-width: 500px) {
+  .aboutIntro {
+    padding-left: 1rem;
+  }
+}
 .aboutContainer {
   display: flex;
   flex-direction: column;
@@ -374,6 +379,22 @@ header .header {
   font-size: 2rem;
   padding: 5rem;
 }
+@media (max-width: 500px) {
+  .aboutContainer .story1 {
+    flex-wrap: wrap;
+    margin-top: 5rem;
+  }
+  .aboutContainer .story1 img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .aboutContainer .story1 p {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    padding-right: auto;
+    padding-left: auto;
+  }
+}
 .aboutContainer .story2 {
   display: flex;
   margin-top: 8rem;
@@ -385,6 +406,27 @@ header .header {
 .aboutContainer .story2 p {
   font-size: 2rem;
   padding: 5rem;
+}
+@media (max-width: 500px) {
+  .aboutContainer .story2 {
+    flex-wrap: wrap;
+    margin-top: 5rem;
+  }
+  .aboutContainer .story2 img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .aboutContainer .story2 p {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    padding-right: auto;
+    padding-left: auto;
+  }
+}
+@media (max-width: 500px) {
+  .aboutContainer .story2 {
+    flex-direction: column-reverse;
+  }
 }
 .aboutContainer .story2 img {
   width: 40%;
@@ -402,6 +444,52 @@ header .header {
   font-size: 2rem;
   padding: 5rem;
 }
+@media (max-width: 500px) {
+  .aboutContainer .story3 {
+    flex-wrap: wrap;
+    margin-top: 5rem;
+  }
+  .aboutContainer .story3 img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .aboutContainer .story3 p {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    padding-right: auto;
+    padding-left: auto;
+  }
+}
 .aboutContainer .story3 img {
   width: 40%;
+}
+.frame-area {
+  display: block;
+  width: 100%;
+  /* RESPONSIVE WIDTH */
+  max-width: 900px;
+  height: 600px;
+  overflow: auto;
+  /* EDIT TO hidden FOR NO SCROLLBAR */
+  border: #999999 1px solid;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  padding: 0px;
+}
+footer a {
+  display: inline-block;
+  text-decoration: none;
+  margin: 1rem;
+  padding-left: 1rem;
+  padding-bottom: 4rem;
+  font-size: 1.5rem;
+  color: #4682B4;
+}
+@media (max-width: 500px) {
+  footer {
+    text-align: center;
+  }
+}
+a:hover {
+  font-weight: bold;
 }
