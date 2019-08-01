@@ -292,7 +292,7 @@ header .header {
   }
 }
 .skills i {
-  color: #4682B4;
+  color: #8B4513;
 }
 .education {
   padding: 3rem;
@@ -331,7 +331,7 @@ header .header {
   }
 }
 .education i {
-  color: #4682B4;
+  color: #8B4513;
 }
 .education p {
   text-align: center;
@@ -511,7 +511,7 @@ footer a {
   padding-left: 1rem;
   padding-bottom: 4rem;
   font-size: 1.8rem;
-  color: #4682B4;
+  color: #8B4513;
 }
 a:hover {
   font-weight: bold;
@@ -572,5 +572,5 @@ a:hover {
   }
 }
 .contact i {
-  color: #4682B4;
+  color: #8B4513;
 }
