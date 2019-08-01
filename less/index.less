@@ -101,21 +101,29 @@ h7 {
 
 
 nav {
+	position: sticky;
+  	top: 0;		
+	background-color: #8B4513 - 20;
 	font-size: 2.25rem;
 	display: flex;
 	justify-content: flex-end;
-	padding-top: 5rem;
+	margin-top: 4rem;
 
+	
 	.link{
 		text-decoration: none;
 		padding: 0.5rem 1rem;
-		color: black;
-		margin: 1rem;
+		color: @color1;		
+		border-left: 1px solid @color1;
 
 		@media (max-width:500px) {
 			padding: 0.5rem;
 		}
 	}
+
+	.active {
+		background-color: #8B4513 - 100;
+	  }
 	
 	a:hover {
 		font-weight: bold;
@@ -428,5 +436,9 @@ a:hover {
 		@media (max-width: 500px) {
 			font-size: 1.6rem;
 		}
+	}
+
+	i {
+		color: @color2;
 	}
 }

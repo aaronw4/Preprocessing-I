@@ -165,21 +165,27 @@ h7 {
   font-size: 2rem;
 }
 nav {
+  position: sticky;
+  top: 0;
+  background-color: #773100;
   font-size: 2.25rem;
   display: flex;
   justify-content: flex-end;
-  padding-top: 5rem;
+  margin-top: 4rem;
 }
 nav .link {
   text-decoration: none;
   padding: 0.5rem 1rem;
-  color: black;
-  margin: 1rem;
+  color: #FFF5EE;
+  border-left: 1px solid #FFF5EE;
 }
 @media (max-width: 500px) {
   nav .link {
     padding: 0.5rem;
   }
+}
+nav .active {
+  background-color: #270000;
 }
 nav a:hover {
   font-weight: bold;
@@ -564,4 +570,7 @@ a:hover {
   .contact li {
     font-size: 1.6rem;
   }
+}
+.contact i {
+  color: #4682B4;
 }
