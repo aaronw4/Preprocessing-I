@@ -53,8 +53,13 @@ table {
     box-sizing: border-box;
 }
 
-@color1: #FFF5EE;
-@color2: #8B4513;
+@color1: #FFF6E7;
+@color1b: #FFEBCB;
+@color1c: #FFDDA8;
+@color1d: #D8AE6C;
+@color1e: #AB7E38;
+@color2: #738AA7;
+@color3: #4D6A8D;
 @border: 1px solid black;
 
 html, body {
@@ -103,7 +108,7 @@ h7 {
 nav {
 	position: sticky;
   	top: 0;		
-	background-color: #8B4513 - 20;
+	background-color: @color1b;
 	font-size: 2.25rem;
 	display: flex;
 	justify-content: flex-end;
@@ -113,8 +118,8 @@ nav {
 	.link{
 		text-decoration: none;
 		padding: 0.5rem 1rem;
-		color: @color1;		
-		border-left: 1px solid @color1;
+		color: black;		
+		border-left: 3px solid @color1c;
 
 		@media (max-width:500px) {
 			padding: 0.5rem;
@@ -122,7 +127,7 @@ nav {
 	}
 
 	.active {
-		background-color: #8B4513 - 100;
+		background-color: @color1c;
 	  }
 	
 	a:hover {
@@ -140,9 +145,10 @@ header{
 	justify-content: space-around;
 	padding-top: 2rem;
 	padding-bottom: 2rem;
-	background-color: @color1 - 20;
+	background-color: @color1b;
 	margin-top: 5rem;
 	align-items: center;
+	border-radius: 10px;
 
 	img {
 		border-radius: 100%;
@@ -186,7 +192,18 @@ header{
 	margin-bottom: 1rem;
 	b {
 		font-weight: bold;
+		font-family: 'Lobster', cursive;
+		font-size: 4rem;
+
+		@media (max-width: 900px) {
+			font-size: 3.25rem;	
+		}
+		@media (max-width: 500px) {
+			font-size:2.5rem;
+			margin-top: 2rem;
+		}
 	}
+
 	@media (max-width: 900px) {
 		font-size: 3.25rem;	
 	}
@@ -198,17 +215,24 @@ header{
 
 .middle {
 	display: flex;
-	width: 100%;
 	justify-content: space-around;
 	margin-bottom: 2rem;
+
+	@media (max-width:600px) {
+		flex-direction: column;	
+		align-items: center;
+		width: 95%;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
 .skills {
 	padding: 3rem;
 	border: @border;
-	border-radius: 10%;
-	background-color: @color1 - 20;
-	flex-basis: 45%;
+	border-radius: 5rem;
+	background-color: @color1b;
+	flex-basis: 48%;
 	
 	p {
 		font-size: 3rem;
@@ -236,14 +260,14 @@ header{
 
 		@media (max-width: 600px) {
 			.skill {
-				flex-basis: 60%;
+				flex-basis: 32%;
 				font-size: 1.8rem;
 			}
 		}
 	}
 	
 	i {
-		color: @color2;
+		color: @color3;
 	}
 }
 
@@ -258,12 +282,26 @@ header{
 		text-decoration: underline;
 		}
 
+	.eduCont {
+
+		.bear {
+			width: 30px;
+			height: auto;
+		}
+
+		.lambda {
+			width: 25px;
+			height: auto;
+		}
+	}	
+	
 	@media (max-width: 900px) {
 		font-size: 1.9rem;
 	}
 
-	@media (max-width: 500px) {
+	@media (max-width: 600px) {
 		font-size: 1.8rem;
+		margin-top: 3rem;
 	}
 
 }
@@ -287,7 +325,8 @@ header{
 }
 
 .aboutIntro {
-	margin-top: 5rem;	
+	margin-top: 5rem;
+	font-family: 'Lobster', cursive;	
 	@media (max-width:900px) {
 		padding-left: 1rem;
 	}
@@ -308,7 +347,11 @@ header{
 
 		p{
 			font-size: 2rem;
-			padding: 5rem;
+			padding: 2rem;
+			border: 10px black double;
+			margin: 3rem;
+			text-align: center;
+			background-color: @color1b;
 		}
 
 		@media (max-width:900px) {
@@ -318,7 +361,7 @@ header{
 			}
 		}
 
-		@media (max-width:500px) {
+		@media (max-width:600px) {
 			flex-wrap: wrap;
 			margin-top: 5rem;
 
@@ -338,7 +381,7 @@ header{
 	.story2 {
 		.story1();
 
-		@media (max-width:500px) {
+		@media (max-width:600px) {
 			flex-direction: column-reverse;			
 		}
 		img{			
@@ -356,6 +399,22 @@ header{
 		}
 		
 	}
+}
+
+.portIntro {
+	h6 {
+		padding-top: 5rem;
+	}
+
+	p {
+		padding-top: 2rem;
+		font-size: 1.5rem;
+
+		a {
+			color: @color3;
+		}
+	}
+
 }
 
 .frame-area {
@@ -381,7 +440,7 @@ footer a{
 	padding-left:1rem;
 	padding-bottom: 4rem;
 	font-size: 1.8rem;
-	color: @color2;
+	color: @color3;
 }
 
 a:hover {
@@ -439,6 +498,6 @@ a:hover {
 	}
 
 	i {
-		color: @color2;
+		color: @color3;
 	}
 }
